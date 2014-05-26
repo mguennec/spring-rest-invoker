@@ -1,5 +1,10 @@
 package com.github.ggeorgovassilis.springjsonmapper.bank;
 
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import java.io.InputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -18,9 +23,6 @@ import com.github.ggeorgovassilis.springjsonmapper.HttpJsonInvokerFactoryProxyBe
 import com.github.ggeorgovassilis.springjsonmapper.support.MockRequestFactory;
 import com.github.ggeorgovassilis.springjsonmapper.support.MockRequestFactory.MockRequest;
 import com.github.ggeorgovassilis.springjsonmapper.support.MockRequestFactory.MockResponse;
-
-import static org.junit.Assert.*;
-
 /**
  * Tests a more complex scenario with recorded HTTP requests and responses
  * 
